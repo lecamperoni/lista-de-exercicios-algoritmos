@@ -16,3 +16,54 @@ class Program {
     }
   }
 }
+
+// Versão 2
+
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+    //COLETA DE DADOS
+    double nota1 = pedirNota("Informe a nota 01: ");
+    double nota2 = pedirNota("Informe a nota 02: ");
+    double nota3 = pedirNota("Informe a nota 03: ");
+
+    //PROCESSAMENTO
+    double media = calcularMedia(nota11 nota2, nota3);
+    string situacao = verificarSituacao(media);
+
+    //SAÍDA DE DADOS
+    Console.WriteLine($"Media = {media});
+    Console.WriteLine($"Situação = {situacao});                  
+  }
+  public static double pedirNota(string msg)
+  { 
+    Console.WriteLine(msg);
+    double nota = Convert.ToDouble(Console ReadLine());
+    retun nota;
+  }
+
+  public static double calcularMedia(double n1, double n2, double n3)
+  { 
+    double m = (n1 + n2 + n3) / 3;
+    return m;
+  }  
+
+  public static string verificarSituacao(double media)
+  {
+    string s = " ";
+    if (media >=6)
+    { 
+      s = "Aprovado";
+      }
+    else
+    {
+      s = "Reprovado";
+      }   
+    return s;
+  }  
+}
+
+
+    
+    
