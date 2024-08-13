@@ -33,14 +33,14 @@ class Program {
     string situacao = verificarSituacao(media);
 
     //SAÍDA DE DADOS
-    Console.WriteLine($"Media = {media});
-    Console.WriteLine($"Situação = {situacao});                  
+    Console.WriteLine($"Media = {media}");
+    Console.WriteLine($"Situação = {situacao}");                  
   }
   public static double pedirNota(string msg)
   { 
     Console.WriteLine(msg);
-    double nota = Convert.ToDouble(Console ReadLine());
-    retun nota;
+    double nota = Convert.ToDouble(Console.ReadLine());
+    return nota;
   }
 
   public static double calcularMedia(double n1, double n2, double n3)
@@ -63,6 +63,7 @@ class Program {
     return s;
   }  
 }
+
 
 
     
