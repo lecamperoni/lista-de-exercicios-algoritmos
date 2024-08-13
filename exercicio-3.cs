@@ -29,7 +29,7 @@ class Program {
     double nota3 = pedirNota("Informe a nota 03: ");
 
     //PROCESSAMENTO
-    double media = calcularMedia(nota11 nota2, nota3);
+    double media = calcularMedia(nota1, nota2, nota3);
     string situacao = verificarSituacao(media);
 
     //SAÍDA DE DADOS
