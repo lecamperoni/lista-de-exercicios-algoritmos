@@ -1,0 +1,18 @@
+//ESCREVA UM ALGORITMO PARA LER UMA TEMPERATURA EM GRAUS FAHRENHEIT, CALCULAR E EXIBIR O VALOR CORRESPONDENTE EM CELSIUS.
+
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+
+    //COLETA DE DADOS
+    Console.WriteLine("Digite a temperatura em Fahrenheit: ");
+    double fahrenheit = double.Parse(Console.ReadLine());
+    
+    //PROCESSAMENTO
+    double celsius = (fahrenheit - 32) / 1.8;
+
+    //SAÍDA DE DADOS
+    Console.WriteLine($"A temperatura em Celsius é: {celsius:F2}");
+  }
+}
